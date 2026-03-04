@@ -1238,6 +1238,27 @@ margin-top:10px;
 
 }
 
+.image-wrapper{
+overflow:hidden;
+cursor:zoom-in;
+}
+
+.image-wrapper img{
+transition:transform 0.4s ease;
+}
+
+.image-wrapper:hover img{
+transform:scale(1.2);
+}
+
+.thumb{
+cursor:pointer;
+border:2px solid transparent;
+}
+
+.thumb:hover{
+border-color:#1f3c88;
+}
 
 /* ---------- Small Phones (480px) ---------- */
 @media (max-width:480px){

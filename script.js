@@ -14,6 +14,16 @@ window.addEventListener("scroll", () => {
 });
 
 
+const mainImage = document.getElementById("mainImage");
+const thumbs = document.querySelectorAll(".thumb");
+
+thumbs.forEach(thumb => {
+  thumb.addEventListener("click", () => {
+    const newImage = thumb.getAttribute("data-img");
+    mainImage.src = newImage;
+  });
+});
+
 
 // Smooth scroll navigation
 document.querySelectorAll('.navbar a').forEach(link => {
